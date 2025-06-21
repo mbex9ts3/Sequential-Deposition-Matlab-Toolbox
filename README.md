@@ -6,4 +6,4 @@ A foundational example is Random Sequential Deposition (RSD), where particles ar
 In addition to basic RSD, this toolbox contains several variants, namely (1) Zoned Sequential Deposition (ZSD), for the generation of Patterned Porous Media (see Pavuluri et al. in-review), (2) Bimodal Random Sequential Deposition, and (3) Layered Random Sequential Deposition.
 
 ![collision_fig](https://github.com/user-attachments/assets/9c757651-021c-40c9-a492-08d0980a1573)
-**Figure 1: **Collision and stablization conditions for RSD.
+**Figure 1:** Collision and stablization conditions for RSD.

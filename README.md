@@ -5,7 +5,7 @@ A foundational example is Random Sequential Deposition (RSD), where particles ar
 
 In addition to basic RSD, this toolbox contains several variants, namely (1) _Zoned Sequential Deposition_ (ZSD), for the generation of Patterned Porous Media (see Pavuluri et al. in-review / Figure 2), (2) _Bimodal Random Sequential Deposition_ (Figure 3), and (3) _Layered Random Sequential Deposition_. If you use this toolbox in your published work please cite the following article: 
 
-_Controlling capillary fingering morphology in patterned porous1 media. Saideep Pavuluri, Thomas Daniel Seers, Ali Saeibehrouzi, Ran
+_Controlling capillary fingering morphology in patterned porous media. Saideep Pavuluri, Thomas Daniel Seers, Ali Saeibehrouzi, Ran
 Holtzman, Soroush Abolfathi, Petr Denissenko, and Harris Sajjad Rabbani._
 
 For questions about its use please contact: thomas.seers@qatar.tamu.edu

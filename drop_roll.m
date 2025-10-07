@@ -34,7 +34,7 @@ function [centroids, radii] = drop_roll(x_bounds, y_bounds, distMod, param1, par
 % centroids - generated circle centroids (nx2)
 % radii - generated circle radii (nx1)
 
-% Author: Thomas Seers: thomas.seers@qatar.tamu.edu (2020)
+% Author: Thomas Seers: thomas.seers@qatar.tamu.edu (2025)
 
 % test distribution input
 testString = [{'Exponential'}; {'Normal'}; {'Uniform'};  {'Lognormal'}; {'Weibull'}; {'Mono'}];
@@ -613,6 +613,7 @@ if vizFlag == true
         axis equal;
     end
 end
+
 
 
 

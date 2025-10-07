@@ -1,12 +1,12 @@
 function [centroids, radii] = drop_roll(x_bounds, y_bounds, distMod, param1, param2, minDg, maxDg, vizFlag)
 % test data
 % x_bounds = [0 1]
-% y_bounds = [0 1]
+% y_bounds = [0 3]
 % distMod = 'Normal'
-% param1 = 0.1
+% param1 = 0.05
 % param2 = 0.05
 % minDg = 0.01
-% maxDg = 0.15
+% maxDg = 0.1
 % vizFlag = true
 % Implementation of the classic 'drop and roll' algorithm for granular media
 % generation
@@ -616,6 +616,7 @@ if vizFlag == true
         axis equal;
     end
 end
+
 
 
 

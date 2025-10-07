@@ -38,6 +38,7 @@ function [centroids, radii, index] = drop_roll_zones(maskIn, distMod, param1, pa
 
 % example usage
 % BWT = imread('shark.bmp'); % example Git repo binary mask
+% BWT = imrotate(BWT,270);
 % [centroids, radii, index] = drop_roll_zones(BWT, [{'Normal'} {'Normal'}], [12 8], [0.6 0.4], [9 6], [15 10], true);
 
 % Author: Thomas Seers: thomas.seers@qatar.tamu.edu (2025)
@@ -1011,6 +1012,7 @@ if vizFlag == true
     end
     axis equal;
 end
+
 
 
 

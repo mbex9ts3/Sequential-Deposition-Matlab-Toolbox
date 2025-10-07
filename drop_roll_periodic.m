@@ -9,6 +9,19 @@ function [centroids, radii] = drop_roll_periodic(x_bounds, y_bounds, layers, dis
 % Circle circle intersections solved with a modified (vectorized) version
 % of the native Matlab circcirc.m function for speed
 
+% test data
+% x_bounds = [0 1]
+% y_bounds = [0 3]
+% layers = [1 2 3]
+% distMod = [{'Normal'}, {'Normal'}, {'Normal'}]
+% param1 = [0.05, 0.025, 0.01]
+% param2 = [0.05, 0.025, 0.01]
+% param1_sc = [1, 1, 1]
+% param2_sc = [1, 1, 1]
+% minDg = [0.01, 0.005, 0.0025]
+% maxDg = [0.1, 0.5, 0.25]
+% vizFlag = true
+
 % INPUTS: 
 % y_bounds - container y boundaries [ymin ymax]
 % x_bounds - container x boundaries [xmin xmax]
@@ -25,7 +38,7 @@ function [centroids, radii] = drop_roll_periodic(x_bounds, y_bounds, layers, dis
 % param2 - nx1 distribution parameter 2 (see above for definitions)
 % param1_sc - nx1 scaling factor for param1 (vertical gradients)
 %           - set as 1 for uniform parameters in each layer
-%           - applied sequentially / set to 1 if 
+%           - applied sequentially 
 % param2_sc - nx1 scaling factor for param2 (vertical gradients)
 %           - set as 1 for uniform parameters in each layer
 % minDg - nx1 minimuum grainsize for each layer
@@ -36,7 +49,7 @@ function [centroids, radii] = drop_roll_periodic(x_bounds, y_bounds, layers, dis
 % radii - generated circle radii (nx1)
 
 % EXAMPLE: [centroids, radii] = drop_roll_periodic([0 200], [0 400], [130 260 400], [{'Normal'}, {'Normal'},{'Normal'}] , [10, 10, 10], [1, 1, 1], [0.998 0.998 0.998], [0.998 0.998 0.998], [2.5 2.5 2.5], [15 15 15], true);
-% Author: Thomas Seers: thomas.seers@qatar.tamu.edu (2020)
+% Author: Thomas Seers: thomas.seers@qatar.tamu.edu (2025)
 
 % initialize
 distroIn = distMod{1};
@@ -96,10 +109,9 @@ circB = [x_cent - circR x_cent + circR]; % bounds in x
 count = 0;
 % set termination criteria max(circC(:,2)) > y_bounds(2)
 
-disp('fitting loop');
+
 while max(circC(:,2)) < y_bounds(2)
     count = count + 1;
-    disp(['fitting particle ' num2str(count)]);
     % apply scaling
     if param1In > minDgIn && param1In < maxDgIn
         param1In = param1In*param1_scIn;
@@ -613,5 +625,6 @@ if vizFlag == true
     end
     axis equal;
 end
+
 
 

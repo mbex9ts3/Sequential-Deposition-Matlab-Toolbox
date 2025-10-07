@@ -36,7 +36,11 @@ function [centroids, radii, index] = drop_roll_zones(maskIn, distMod, param1, pa
 % centroids - generated circle centroids (nx2)
 % radii - generated circle radii (nx1)
 
-% Author: Thomas Seers: thomas.seers@qatar.tamu.edu (2020)
+% example usage
+% BWT = imread('shark.bmp'); % example Git repo binary mask
+% [centroids, radii, index] = drop_roll_zones(BWT, [{'Normal'} {'Normal'}], [12 8], [0.6 0.4], [9 6], [15 10], true);
+
+% Author: Thomas Seers: thomas.seers@qatar.tamu.edu (2025)
 
 % setup container (image limts)
 x_bounds = [1 size(maskIn, 2)];
@@ -1007,5 +1011,6 @@ if vizFlag == true
     end
     axis equal;
 end
+
 
 

@@ -1,10 +1,21 @@
 function [centroids, radii, idx] = drop_roll_binary(x_bounds, y_bounds, distMod1, param1_1, param1_2, minDg1, maxDg1, distMod2, param2_1, param2_2, minDg2, maxDg2,vizFlag)
 % test data
 % x_bounds = [0 1]
-% y_bounds = [0 1]
+% y_bounds = [0 3]
+% distMod1 = 'Normal'
+% param1_1 = 0.1
+% param2_1 = 0.05
+% minDg1 = 0.01
+% maxDg1 = 0.15
+% distMod2 = 'Normal'
+% param1_2 = 0.2
+% param2_2 = 0.1
+% minDg2 = 0.02
+% maxDg2 = 0.3
+% vizFlag = true
 
 % Implementation of the classic 'drop and roll' algorithm for granular media
-% generation
+% generation (bimodal implementation)
 
 % Takes container bounds and particle size distribution as input and
 % returns the centroids and radii of the generated particles
@@ -679,5 +690,6 @@ if vizFlag == true
         axis equal;
     end
 end
+
 
 

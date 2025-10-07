@@ -43,7 +43,7 @@ function [centroids, radii, idx] = drop_roll_binary(x_bounds, y_bounds, distMod1
 % centroids - generated circle centroids (nx2)
 % radii - generated circle radii (nx1)
 
-% Author: Thomas Seers: thomas.seers@qatar.tamu.edu (2020)
+% Author: Thomas Seers: thomas.seers@qatar.tamu.edu (2025)
 
 % test distribution input
 testString = [{'Exponential'}; {'Normal'}; {'Uniform'};  {'Lognormal'}; {'Weibull'}; {'Mono'}];
@@ -690,6 +690,7 @@ if vizFlag == true
         axis equal;
     end
 end
+
 
 
 

@@ -5,6 +5,9 @@ function [centroids, radii] = drop_roll(x_bounds, y_bounds, distMod, param1, par
 % distMod = 'Normal'
 % param1 = 0.1
 % param2 = 0.05
+% minDg = 0.01
+% maxDg = 0.15
+% vizFlag = true
 % Implementation of the classic 'drop and roll' algorithm for granular media
 % generation
 
@@ -613,6 +616,7 @@ if vizFlag == true
         axis equal;
     end
 end
+
 
 
 

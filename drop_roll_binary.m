@@ -1,7 +1,7 @@
 function [centroids, radii, idx] = drop_roll_binary(x_bounds, y_bounds, distMod1, param1_1, param1_2, minDg1, maxDg1, distMod2, param2_1, param2_2, minDg2, maxDg2,vizFlag)
 % test data
-% x_bounds = [0 1]
-% y_bounds = [0 3]
+% x_bounds = [0 2]
+% y_bounds = [0 6]
 % distMod1 = 'Normal'
 % param1_1 = 0.1
 % param2_1 = 0.05
@@ -690,6 +690,7 @@ if vizFlag == true
         axis equal;
     end
 end
+
 
 
 

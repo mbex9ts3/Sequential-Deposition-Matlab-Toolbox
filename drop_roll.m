@@ -3,8 +3,8 @@ function [centroids, radii] = drop_roll(x_bounds, y_bounds, distMod, param1, par
 % x_bounds = [0 1]
 % y_bounds = [0 1]
 % distMod = 'Normal'
-% mu = 0.1
-% sigma = 0.05
+% param1 = 0.1
+% param2 = 0.05
 % Implementation of the classic 'drop and roll' algorithm for granular media
 % generation
 
@@ -613,6 +613,7 @@ if vizFlag == true
         axis equal;
     end
 end
+
 
 
 
